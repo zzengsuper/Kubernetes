@@ -151,7 +151,7 @@ Create cluster (on k8s-master1)
 
 ```shell
 sudo kubeadm init \
->   --pod-network-cidr=10.10.0.0/16 \
+>   --pod-network-cidr=192.168.0.0/16 \
 >   --upload-certs \
 >   --control-plane-endpoint=172.16.16.151
 ```
