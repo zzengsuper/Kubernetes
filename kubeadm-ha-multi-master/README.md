@@ -136,7 +136,7 @@ Enable kubelet service
 sudo systemctl enable kubelet
 ```
 
-Initialize the machine (k8s-master1) that will run the control plane components which includes etcd and the API Server.
+Initialize the machine that will run the control plane components which includes etcd and the API Server.
 
 ```shell
 sudo kubeadm config images pull
@@ -147,7 +147,7 @@ sudo kubeadm config images pull
 sudo kubeadm config images pull --cri-socket /run/containerd/containerd.sock
 ```
 
-Create cluster
+Create cluster (on k8s-master1)
 
 ```shell
 sudo kubeadm init \
