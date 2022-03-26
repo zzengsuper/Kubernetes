@@ -7,8 +7,8 @@ Follow this documentation to set up GlusterFS through Hekiti interface
 | Role         | FQDN                  | IP             | OS          | RAM  | CPU  |
 | ------------ | --------------------- | -------------- | ----------- | ---- | ---- |
 | Heketi Node  | heketi.example.com    | 172.16.16.200  | Ubuntu20.04 | 1G   | 1    |
-| Gluster Node | gluster-1.example.com | 172.16.16.201  | Ubuntu20.04 | 1G   | 1    |
-| Gluster Node | gluster-2.example.com | 1722.16.16.202 | Ubuntu20.04 | 1G   | 1    |
+| Gluster Node | gluster-1.example.com | 172.16.16.201  | Ubuntu20.04 | 2G   | 2    |
+| Gluster Node | gluster-2.example.com | 1722.16.16.202 | Ubuntu20.04 | 2G   | 2    |
 
 ## Gluster Nodes Setup (on gluster-1 and gluster-2)
 
