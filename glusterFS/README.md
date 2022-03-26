@@ -64,7 +64,7 @@ cp /tmp/heketi/heketi.json /etc/heketi/
 
 Edit /etc/heketi/heketi.json, change executor to ssh and update sshexec options as shown below
 ```shell
-	#Change use_auth to true
+    #Change use_auth to true
     "use_auth":true
     #change admin and user key
     "admin":{
