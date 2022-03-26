@@ -13,7 +13,7 @@ Follow this documentation to set up GlusterFS through Hekiti interface
 ## Gluster Nodes Setup (on gluster-1 and gluster-2)
 
 Attach another hard disk to VirtualBox virtual machines
-### Install glusterfs:
+### Install glusterfs
 
 ```shell
 {
