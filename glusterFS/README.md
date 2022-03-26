@@ -7,13 +7,13 @@ Follow this documentation to set up GlusterFS through Hekiti interface
 | Role         | FQDN                  | IP             | OS          | RAM  | CPU  |
 | ------------ | --------------------- | -------------- | ----------- | ---- | ---- |
 | Heketi Node  | heketi.example.com    | 172.16.16.200  | Ubuntu20.04 | 1G   | 1    |
-| Gluster Node | gluster-1.example.com | 172.16.16.201  | Ubuntu20.04 | 1G   | 1    |
-| Gluster Node | gluster-2.example.com | 1722.16.16.202 | Ubuntu20.04 | 1G   | 1    |
+| Gluster Node | gluster-1.example.com | 172.16.16.201  | Ubuntu20.04 | 2G   | 2    |
+| Gluster Node | gluster-2.example.com | 1722.16.16.202 | Ubuntu20.04 | 2G   | 2    |
 
 ## Gluster Nodes Setup (on gluster-1 and gluster-2)
 
 Attach another hard disk to VirtualBox virtual machines
-### Install glusterfs:
+### Install glusterfs
 
 ```shell
 {
@@ -64,7 +64,7 @@ cp /tmp/heketi/heketi.json /etc/heketi/
 
 Edit /etc/heketi/heketi.json, change executor to ssh and update sshexec options as shown below
 ```shell
-	#Change use_auth to true
+    #Change use_auth to true
     "use_auth":true
     #change admin and user key
     "admin":{
