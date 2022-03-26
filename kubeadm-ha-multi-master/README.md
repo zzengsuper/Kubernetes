@@ -58,20 +58,20 @@ defaults
         timeout client 50000
         timeout server 50000
    
-frontend kube-apiserver
+frontend kubernetes-frontend
   bind *:6443
   mode tcp
   option tcplog
-  default_backend kube-apiserver
+  default_backend kubernetes-backend
    
-backend kube-apiserver
+backend kubernetes-backend
     mode tcp
     option tcplog
     option tcp-check
     balance roundrobin
     default-server inter 10s downinter 5s rise 2 fall 2 slowstart 60s maxconn 250 maxqueue 256 weight 100
-    server kube-apiserver-1 172.16.16.151:6443 check # Replace the IP address with your own
-    server kube-apiserver-2 172.16.16.152:6443 check # Replace the IP address with your own
+    server k8s-master1 172.16.16.151:6443 check # Replace the IP address with your own
+    server k8s-master2 172.16.16.152:6443 check # Replace the IP address with your own
 ```
 
 Save the file and run the following command to restart and enable HAproxy.
