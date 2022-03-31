@@ -1,7 +1,3 @@
-[toc]
-
-
-
 # Kind
 
 This document shows you how to create cluster with Kind.
