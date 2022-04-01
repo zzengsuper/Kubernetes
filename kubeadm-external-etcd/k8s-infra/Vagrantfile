@@ -1,0 +1,35 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+ENV['VAGRANT_NO_PARALLEL'] = 'yes'
+
+Vagrant.configure(2) do |config|
+
+  config.vm.provision "shell", path: "bootstrap.sh"
+
+  # Kubernetes Master Node
+  config.vm.define "emaster" do |kmaster|
+    kmaster.vm.box = "generic/ubuntu-20.04"
+    kmaster.vm.hostname = "emaster.example.com"
+    kmaster.vm.network "private_network", ip: "172.16.16.224"
+    kmaster.vm.provider "virtualbox" do |v|
+      v.name = "emaster"
+      v.memory = 2048
+      v.cpus = 2
+    end
+  end
+
+  NodeCount = 1
+
+  # Kubernetes Worker Nodes
+  config.vm.define "eworker" do |workernode|
+    workernode.vm.box = "generic/ubuntu-20.04"
+    workernode.vm.hostname = "eworker.example.com"
+    workernode.vm.network "private_network", ip: "172.16.16.225"
+    workernode.vm.provider "virtualbox" do |v|
+      v.name = "eworker"
+      v.memory = 1024
+      v.cpus = 1
+    end
+  end
+end
