@@ -75,9 +75,10 @@ sysctl --system
 ### Create cluster configuration
 
 ```shell
-rke config --name rkecluster.yml
+rke config --name rkecluster.yml 
+```
 
-Once gone through this interactive cluster configuration, you will end up with configuration file (rkecluster.yml) in the current directory. 
+Once gone through this interactive cluster configuration, you will end up with configuration file (rkecluster.yml) in the current directory.
 
 ### Provision the cluster
 
