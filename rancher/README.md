@@ -77,50 +77,6 @@ sysctl --system
 ```shell
 rke config --name rkecluster.yml
 
-[+] Cluster Level SSH Private Key Path [~/.ssh/id_rsa]: /home/fiona/.ssh/rke_rsa
-[+] Number of Hosts [1]: 3
-[+] SSH Address of host (1) [none]: 172.16.16.121
-[+] SSH Port of host (1) [22]: 
-[+] SSH Private Key Path of host (172.16.16.121) [none]: /home/fiona/.ssh/rke_rsa
-[+] SSH User of host (172.16.16.121) [ubuntu]: root
-[+] Is host (172.16.16.121) a Control Plane host (y/n)? [y]: y
-[+] Is host (172.16.16.121) a Worker host (y/n)? [n]: y
-[+] Is host (172.16.16.121) an etcd host (y/n)? [n]: y
-[+] Override Hostname of host (172.16.16.121) [none]: node1
-[+] Internal IP of host (172.16.16.121) [none]: 172.16.16.121
-[+] Docker socket path on host (172.16.16.121) [/var/run/docker.sock]: 
-[+] SSH Address of host (2) [none]: 172.16.16.122
-[+] SSH Port of host (2) [22]: 
-[+] SSH Private Key Path of host (172.16.16.122) [none]: /home/fiona/.ssh/rke_rsa
-[+] SSH User of host (172.16.16.122) [ubuntu]: root
-[+] Is host (172.16.16.122) a Control Plane host (y/n)? [y]: y
-[+] Is host (172.16.16.122) a Worker host (y/n)? [n]: y
-[+] Is host (172.16.16.122) an etcd host (y/n)? [n]: y
-[+] Override Hostname of host (172.16.16.122) [none]: node2
-[+] Internal IP of host (172.16.16.122) [none]: 172.16.16.122
-[+] Docker socket path on host (172.16.16.122) [/var/run/docker.sock]: 
-[+] SSH Address of host (3) [none]: 172.16.16.123
-[+] SSH Port of host (3) [22]: 
-[+] SSH Private Key Path of host (172.16.16.123) [none]: /home/fiona/.ssh/rke_rsa
-[+] SSH User of host (172.16.16.123) [ubuntu]: root
-[+] Is host (172.16.16.123) a Control Plane host (y/n)? [y]: y
-[+] Is host (172.16.16.123) a Worker host (y/n)? [n]: y
-[+] Is host (172.16.16.123) an etcd host (y/n)? [n]: y
-[+] Override Hostname of host (172.16.16.123) [none]: node3
-[+] Internal IP of host (172.16.16.123) [none]: 172.16.16.123
-[+] Docker socket path on host (172.16.16.123) [/var/run/docker.sock]: 
-[+] Network Plugin Type (flannel, calico, weave, canal, aci) [canal]: calico
-[+] Authentication Strategy [x509]: 
-[+] Authorization Mode (rbac, none) [rbac]: 
-[+] Kubernetes Docker image [rancher/hyperkube:v1.22.6-rancher1]: 
-[+] Cluster domain [cluster.local]: 
-[+] Service Cluster IP Range [10.43.0.0/16]: 
-[+] Enable PodSecurityPolicy [n]: 
-[+] Cluster Network CIDR [10.42.0.0/16]: 
-[+] Cluster DNS Service IP [10.43.0.10]: 
-[+] Add addon manifest URLs or YAML files [no]: 
-```
-
 Once gone through this interactive cluster configuration, you will end up with configuration file (rkecluster.yml) in the current directory. 
 
 ### Provision the cluster
