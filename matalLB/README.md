@@ -3,9 +3,9 @@
 ## matalLB Installation By Manifest
 
 https://metallb.universe.tf/installation/
-Note: before apply any file or url, please check/verify it in advance 
+> Note: before apply any file or url, please check/verify it in advance 
 
-## matalLB layer 2 Configuration
+## matalLB Layer 2 Configuration
 
 https://metallb.universe.tf/configuration/
 
