@@ -1,11 +1,12 @@
-# MatalLB
+# MetalLB
+This document shows you how to deploy and use ingress controller in Kubernetes cluster along with the MetalLB
 
-## matalLB Installation By Manifest
+## metalLB Installation By Manifest
 
 https://metallb.universe.tf/installation/
 > Note: before apply any file or url, please check/verify it in advance 
 
-## matalLB Layer 2 Configuration
+## metalLB Layer 2 Configuration
 
 https://metallb.universe.tf/configuration/
 
