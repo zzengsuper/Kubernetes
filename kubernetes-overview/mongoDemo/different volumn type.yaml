@@ -1,0 +1,83 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: elastic
+spec:
+  selector: 
+    matchLabels:
+      app: elastic
+  template:
+    metadata:
+      labels:
+        app: elastic
+    spec:
+      containers:
+      - image: elastic:latest
+        name: elastic-container
+        ports:
+        - containerPort: 9200
+        volumnMounts:
+        - name: es-persistent-storage
+          mountPath: /var/lib/data
+        - name: es-secret-dir
+          mountPath: /var/lib/secret
+        - name: es-config-dir
+          mountPath: /var/lib/config
+      volumes:
+      - name: es-persistent-storage
+        persistentVolumnClaim:
+          claimName: es-pv-claim
+      - name: es-secret-dir
+        secret:
+          secretName: es-secret
+      - name: es-config-dir
+        configMap:
+          name: es-config-map
+
+{
+  volumes: [
+    {
+      name: es,
+      persis: {
+        claim: es
+        }
+    },
+    {
+      name: es,
+      secret: {
+        claim: es
+        }
+    },
+    {
+      name: es,
+      persis: {
+        claim: es
+        }
+    }
+  ]
+}
+
+volums[0]
+
+template:
+    metadata:
+      labels:
+        app: elastic
+
+{
+  template: {
+    metadata: {
+      labels: {
+        app: elastic
+      }
+    }
+  }
+}
+
+templete["metadata"]["lables"]["app"] = elasic
+
+class person:
+  age = 19
+  name = Mike
+  def speak():
+    print("Hello")
