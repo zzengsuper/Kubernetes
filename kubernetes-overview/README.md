@@ -31,7 +31,7 @@
 
   
 
-### What features do rochestration tools offer?
+### What features do orchestration tools offer?
 
 - High Availability or no downtime
 
@@ -43,7 +43,7 @@
 
 ### K8s architecture
 
-![Kubernetes cluster](./K8s_png/Kubernetes cluster.png)
+![Kubernetes cluster](/K8s_png/Kubernetes cluster.png)
 
 #### 3 process running on every worker node
 
