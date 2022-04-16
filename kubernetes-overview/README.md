@@ -43,7 +43,7 @@
 
 ### K8s architecture
 
-![Kubernetes cluster](/K8s_png/Kubernetes cluster.png)
+![Kubernetes cluster](https://github.com/zzengsuper/Kubernetes/blob/master/kubernetes-overview/K8s_png/Kubernetes%20cluster.png)
 
 #### 3 process running on every worker node
 
